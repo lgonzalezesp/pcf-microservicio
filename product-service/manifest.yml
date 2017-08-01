@@ -1,0 +1,8 @@
+---
+applications:
+- name: product-service
+  memory: 500M
+  buildpack: java_buildpack
+  path: build/libs/product-service-0.0.1-SNAPSHOT.jar
+  routes:
+  - route: product-service-rest.cfapps.io

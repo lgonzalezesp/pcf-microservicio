@@ -1,0 +1,12 @@
+endpoints:
+  sensitive: false
+
+server:
+  port: 8089
+product.service.host: http://localhost:8080/
+
+---
+spring:
+  profiles: cloud
+
+product.service.host: https://product-service-rest.cfapps.io/

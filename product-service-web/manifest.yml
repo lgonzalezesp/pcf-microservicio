@@ -1,0 +1,9 @@
+---
+applications:
+- name: product-service-web
+  memory: 1024M
+  buildpack: java_buildpack
+  path: build/libs/product-service-web-0.0.1-SNAPSHOT.jar
+  routes:
+  - route: product-service-web.cfapps.io
+  
